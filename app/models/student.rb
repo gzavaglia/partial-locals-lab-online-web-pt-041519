@@ -21,9 +21,5 @@ class Student < ActiveRecord::Base
   #     self.all
   #   end
   # end
-  self.name.select do |each_name|
-    each_name
-  end
-end
 
 end
