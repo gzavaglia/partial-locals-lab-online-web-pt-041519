@@ -16,7 +16,7 @@ class Student < ActiveRecord::Base
   
   def self.search(name)
     if query.present?
-      where('NAME like ?', "%#{query}%")
+      where('NAME like ?', "%#{name}%")
     else
       self.all
     end
