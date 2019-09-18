@@ -1,1 +1,2 @@
-<%= render local 'form', locals: {student = @student} %>
+<%= render partial 'form', locals: {student = @student} %>
+<%= render partial: "authors/author", locals: {post_author: @author} %>
