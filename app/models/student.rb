@@ -24,7 +24,7 @@ class Student < ActiveRecord::Base
   if name != self.name
     self.all
   else
-    self.name
+    name
   end
 end
 
