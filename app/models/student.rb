@@ -27,3 +27,5 @@ class Student < ActiveRecord::Base
     self.name
   end
 end
+
+end
