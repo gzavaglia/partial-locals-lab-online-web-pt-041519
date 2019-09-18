@@ -23,7 +23,6 @@ class Student < ActiveRecord::Base
   # end
   
   def self.search(namex)
-    binding pry
     self.all.select { |student| student.name == namex}
   end
 
