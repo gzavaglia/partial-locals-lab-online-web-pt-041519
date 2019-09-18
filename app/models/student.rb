@@ -21,10 +21,8 @@ class Student < ActiveRecord::Base
   #     self.all
   #   end
   # end
-  if name != self.name
-    self.all
-  else
-    name
+  self.name.select do |each_name|
+    each_name
   end
 end
 
