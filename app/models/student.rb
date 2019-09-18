@@ -22,7 +22,7 @@ class Student < ActiveRecord::Base
   #   end
   # end
   
-  def self.search(name)
+  def self.search(namex)
     self.all.select! { |student| student.name == namex}
   end
 
