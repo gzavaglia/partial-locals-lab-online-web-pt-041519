@@ -23,7 +23,7 @@ class Student < ActiveRecord::Base
   # end
   
   def self.search(namex)
-    self.all.select { |student| student.include? (namex)}
+    self.all.select { |student| student.name.include? (namex)}
   end
 
 end
